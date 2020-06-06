@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HarptosTimeFormatter Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/HarptosTimeFormatter" class="dashAnchor"></a>
+    <a title="HarptosTimeFormatter Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (83% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        HarptosTimeFormatter Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/HarptosCalendar.html">HarptosCalendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HarptosTime.html">HarptosTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HarptosTimeFormatter.html">HarptosTimeFormatter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/HarptosFestival.html">HarptosFestival</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>HarptosTimeFormatter</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">HarptosTimeFormatter</span></code></pre>
+
+                </div>
+              </div>
+            <p>Use the <code>HarptosTimeFormatter</code> to format instances of <code><a href="../Classes/HarptosTime.html">HarptosTime</a></code>, the following patterns can
+be used:</p>
+
+<ul>
+<li>YYYY: the year, e.g.: 909</li>
+<li>Y: the long name of the year, e.g.: &ldquo;The Year of the Ogre&rdquo; for 909 DR</li>
+<li>M: the month number, through 1 - 12</li>
+<li>MM: the month number, through 01 - 12</li>
+<li>MMM: the full of the month / festival, e.g.: Tarsakh for the 4th Month or Midwinter for the festival the day after Hammer 30</li>
+<li>dd: the day of the month, through 01 - 30</li>
+<li>d: the day of the month, though 1 - 30</li>
+<li>hh: the hour, through 00 - 23</li>
+<li>h: the hour, through 0 - 23</li>
+<li>mm: the minute, through 00 - 59</li>
+<li>m: the minute, through 0 - 59</li>
+<li>ss: the second, through 00 - 59</li>
+<li>s: the second, through 0 - 59
+Values between single quotes will be ignored</li>
+</ul>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Harptos0A13TimeFormatterC11monthFormat08festivalE0ACSS_SStcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(monthFormat:festivalFormat:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Harptos0A13TimeFormatterC11monthFormat08festivalE0ACSS_SStcfc">init(monthFormat:<wbr>festivalFormat:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The constructor</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">monthFormat</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">festivalFormat</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>monthFormat</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A format string for months</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>festivalFormat</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A format string for festivals</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Harptos0A13TimeFormatterC6string4fromSSAA0aB0C_tF"></a>
+                    <a name="//apple_ref/swift/Method/string(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Harptos0A13TimeFormatterC6string4fromSSAA0aB0C_tF">string(from:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return a formatted string for a given <code><a href="../Classes/HarptosTime.html">HarptosTime</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">string</span><span class="p">(</span><span class="n">from</span> <span class="nv">time</span><span class="p">:</span> <span class="kt"><a href="../Classes/HarptosTime.html">HarptosTime</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>time</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The time to be formatted</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-06-06)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

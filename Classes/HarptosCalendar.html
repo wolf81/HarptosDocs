@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HarptosCalendar Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/HarptosCalendar" class="dashAnchor"></a>
+    <a title="HarptosCalendar Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (83% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        HarptosCalendar Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/HarptosCalendar.html">HarptosCalendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HarptosTime.html">HarptosTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HarptosTimeFormatter.html">HarptosTimeFormatter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/HarptosFestival.html">HarptosFestival</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>HarptosCalendar</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">HarptosCalendar</span></code></pre>
+
+                </div>
+              </div>
+            <p>The HarptosCalendar can be used to create HarptosTime objects</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Harptos0A8CalendarC10getTimeFor4year5month3day4hour6minute6secondAA0aD0CSi_S5itFZ"></a>
+                    <a name="//apple_ref/swift/Method/getTimeFor(year:month:day:hour:minute:second:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Harptos0A8CalendarC10getTimeFor4year5month3day4hour6minute6secondAA0aD0CSi_S5itFZ">getTimeFor(year:<wbr>month:<wbr>day:<wbr>hour:<wbr>minute:<wbr>second:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return a time for a given year, month &amp; day</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getTimeFor</span><span class="p">(</span><span class="nv">year</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">month</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">day</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">hour</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">minute</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">second</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/HarptosTime.html">HarptosTime</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>year</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The year, it&rsquo;s recommended to limit the range from -700 DR to 1600 DR</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>month</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A value between 1 and 12</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>day</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A value between 1 and 30</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Harptos0A8CalendarC10getTimeFor4year8festival4hour6minute6secondAA0aD0CSi_AA0A8FestivalOS3itFZ"></a>
+                    <a name="//apple_ref/swift/Method/getTimeFor(year:festival:hour:minute:second:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Harptos0A8CalendarC10getTimeFor4year8festival4hour6minute6secondAA0aD0CSi_AA0A8FestivalOS3itFZ">getTimeFor(year:<wbr>festival:<wbr>hour:<wbr>minute:<wbr>second:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return a time for a given year and festival</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getTimeFor</span><span class="p">(</span><span class="nv">year</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">festival</span><span class="p">:</span> <span class="kt"><a href="../Enums/HarptosFestival.html">HarptosFestival</a></span><span class="p">,</span> <span class="nv">hour</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">minute</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">second</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/HarptosTime.html">HarptosTime</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>year</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The year, it&rsquo;s recommended to limit the range from -700 DR to 1600 DR</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>festival</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A festival</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Harptos0A8CalendarC10getTimeFor5epochAA0aD0CSi_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/getTimeFor(epoch:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Harptos0A8CalendarC10getTimeFor5epochAA0aD0CSi_tFZ">getTimeFor(epoch:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return a time object for a given epoch, where 0 is equal to 0 Dale Reckoning</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getTimeFor</span><span class="p">(</span><span class="nv">epoch</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/HarptosTime.html">HarptosTime</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>epoch</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The epoch</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Retrieve%20human-readable%20names%20for%20years%2C%20months%20%26%20festivals"></a>
+                <a name="//apple_ref/swift/Section/Retrieve human-readable names for years, months &amp; festivals" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Retrieve%20human-readable%20names%20for%20years%2C%20months%20%26%20festivals"></a>
+                  <h3 class="section-name"><p>Retrieve human-readable names for years, months &amp; festivals</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Harptos0A8CalendarC10getNameFor4yearSSSgSi_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/getNameFor(year:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Harptos0A8CalendarC10getNameFor4yearSSSgSi_tFZ">getNameFor(year:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the name for the year, will be nil if the year is not in range (-700 &hellip; 1600)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getNameFor</span><span class="p">(</span><span class="nv">year</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>year</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The year to return the name for</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Harptos0A8CalendarC11getNamesFor5monthSaySSGSi_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/getNamesFor(month:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Harptos0A8CalendarC11getNamesFor5monthSaySSGSi_tFZ">getNamesFor(month:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the names for a month; the first name is the most common name, but can be followed by alternate names</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getNamesFor</span><span class="p">(</span><span class="nv">month</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>month</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The month to return the name for</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Harptos0A8CalendarC10getNameFor8festivalSSAA0A8FestivalO_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/getNameFor(festival:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Harptos0A8CalendarC10getNameFor8festivalSSAA0A8FestivalO_tFZ">getNameFor(festival:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the name for a festival</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getNameFor</span><span class="p">(</span><span class="nv">festival</span><span class="p">:</span> <span class="kt"><a href="../Enums/HarptosFestival.html">HarptosFestival</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>festival</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The festival to return the name for</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-06-06)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

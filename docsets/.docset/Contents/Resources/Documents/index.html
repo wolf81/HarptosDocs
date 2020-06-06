@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html"> Docs</a> (83% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html"> Reference</a>
+        <img id="carat" src="img/carat.png" />
+          Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/HarptosCalendar.html">HarptosCalendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/HarptosTime.html">HarptosTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/HarptosTimeFormatter.html">HarptosTimeFormatter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/HarptosFestival.html">HarptosFestival</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <p><img src="https://img.shields.io/github/tag/wolf81/Harptos.svg" alt="GitHub tag (latest SemVer)"> <a href="https://travis-ci.org/wolf81/Harptos"><img src="https://travis-ci.org/wolf81/Harptos.svg?branch=master" alt="Build Status"></a> <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a> <img src="https://img.shields.io/static/v1.svg?label=platform&message=macOS%20%7C%20tvOS%20%7C%20iOS&color=lightgrey" alt="Supported platforms"> <a href="https://wolf81.github.io/HarptosDocs/"><img src="https://wolf81.github.io/HarptosDocs/badge.svg" alt="docs"></a> <a href="https://codecov.io/gh/wolf81/Harptos"><img src="https://img.shields.io/codecov/c/github/wolf81/Harptos.svg" alt="Codecov"></a></p>
+<h1 id='harptos' class='heading'>Harptos</h1>
+
+<p>A small library for handling AD&amp;D dates &amp; times with regards to the Calendar of Harptos as displayed here:</p>
+
+<p><img src="https://raw.githubusercontent.com/wolf81/Harptos/master/calendar-of-harptos.jpg" alt=""></p>
+
+<p>The goal of this library is to provide basic calendar functionality. I plan to use this library in a game I work on, but I believe others might be able to find a use for it as well.</p>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<p>The library is targetted towards iOS, macOS and tvOS platforms and written in Swift. The library is available using Carthage.</p>
+<h2 id='functionality' class='heading'>Functionality</h2>
+
+<p>The goal of the library is to provide the following functionality:</p>
+
+<ul>
+<li><p>Allow creation of time objects based on the Calendar of Harptos</p></li>
+<li><p>The precision of time formats should be in seconds, since a round of play time in AD&amp;D lasts for 6 seconds</p></li>
+<li><p>Allow manipulation of time objects (adding and removing days, hours, minutes, seconds, etc&hellip;)</p></li>
+<li><p>Allow formatting of time objects using custom format strings</p></li>
+</ul>
+
+<p>Finally the library should also be easy to use.</p>
+<h2 id='usage' class='heading'>Usage</h2>
+
+<p>First it&rsquo;s important to understand time in AD&amp;D according to the Harptos calender:</p>
+
+<ul>
+<li>A year exists out of 356 days or 366 days in a leap year</li>
+<li>Leap years occur every 4 years</li>
+<li>A month lasts for 30 days</li>
+<li>Between several months there are festivals that last for a day.</li>
+<li>For normal years there are 5 festivals in a year, for leap years a 6th festival day is added</li>
+<li>The 5 (or 6 in leap years) special festivals that are added every year fall between months</li>
+</ul>
+<h3 id='creation-of-code-harptostime-code-objects' class='heading'>Creation of <code><a href="Classes/HarptosTime.html">HarptosTime</a></code> objects</h3>
+
+<p>Use the <code><a href="Classes/HarptosCalendar.html">HarptosCalendar</a></code> to create <code><a href="Classes/HarptosTime.html">HarptosTime</a></code> objects based on a date or a festival:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">date</span> <span class="o">=</span> <span class="kt">HarptosCalendar</span><span class="o">.</span><span class="nf">getTimeFor</span><span class="p">(</span><span class="nv">year</span><span class="p">:</span> <span class="mi">1200</span><span class="p">,</span> <span class="nv">month</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">day</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="nv">hour</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">minute</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="nv">second</span><span class="p">:</span> <span class="mi">2</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">festival</span> <span class="o">=</span> <span class="kt">HarptosCalendar</span><span class="o">.</span><span class="nf">getTimeFor</span><span class="p">(</span><span class="nv">year</span><span class="p">:</span> <span class="mi">1200</span><span class="p">,</span> <span class="nv">festival</span><span class="p">:</span> <span class="o">.</span><span class="n">midwinter</span><span class="p">)</span> 
+</code></pre>
+<h3 id='manipulation-of-code-harptostime-code-objects' class='heading'>Manipulation of <code><a href="Classes/HarptosTime.html">HarptosTime</a></code> objects</h3>
+
+<p>In order to manipulate <code><a href="Classes/HarptosTime.html">HarptosTime</a></code> objects, use the appropriate methods on the <code><a href="Classes/HarptosTime.html">HarptosTime</a></code> objects:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">time1</span> <span class="o">=</span> <span class="kt">HarptosCalendar</span><span class="o">.</span><span class="nf">getTimeFor</span><span class="p">(</span><span class="nv">year</span><span class="p">:</span> <span class="mi">1200</span><span class="p">,</span> <span class="nv">month</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">day</span><span class="p">:</span> <span class="mi">24</span><span class="p">,</span> <span class="nv">hour</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="nv">minute</span><span class="p">:</span> <span class="mi">33</span><span class="p">,</span> <span class="nv">second</span><span class="p">:</span> <span class="mi">5</span><span class="p">)</span> <span class="c1">// 1200 01 24 - 05:33:05</span>
+<span class="k">let</span> <span class="nv">time2</span> <span class="o">=</span> <span class="n">time1</span><span class="o">.</span><span class="nf">timeByAdding</span><span class="p">(</span><span class="nv">days</span><span class="p">:</span> <span class="mi">1</span><span class="p">)</span> <span class="c1">// 1200 01 25 - 05:33:05</span>
+</code></pre>
+
+<p>For going in the past, use negative values, e.g.:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">time1</span> <span class="o">=</span> <span class="kt">HarptosCalendar</span><span class="o">.</span><span class="nf">getTimeFor</span><span class="p">(</span><span class="nv">year</span><span class="p">:</span> <span class="mi">1200</span><span class="p">,</span> <span class="nv">month</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">day</span><span class="p">:</span> <span class="mi">24</span><span class="p">,</span> <span class="nv">hour</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="nv">minute</span><span class="p">:</span> <span class="mi">33</span><span class="p">,</span> <span class="nv">second</span><span class="p">:</span> <span class="mi">5</span><span class="p">)</span> <span class="c1">// 1200 01 24 - 05:33:05</span>
+<span class="k">let</span> <span class="nv">time2</span> <span class="o">=</span> <span class="n">time1</span><span class="o">.</span><span class="nf">timeByAdding</span><span class="p">(</span><span class="nv">minutes</span><span class="p">:</span> <span class="o">-</span><span class="mi">30</span><span class="p">)</span> <span class="c1">// // 1200 01 24 - 05:03:05</span>
+</code></pre>
+<h3 id='using-custom-format-strings-with-code-harptostime-code-objects' class='heading'>Using custom format strings with <code><a href="Classes/HarptosTime.html">HarptosTime</a></code> objects</h3>
+
+<p>It&rsquo;s possible to provide your own format strings. In order to do so, create a <code><a href="Classes/HarptosTimeFormatter.html">HarptosTimeFormatter</a></code> and provide it with format strings for months and festivals:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">formatter</span> <span class="o">=</span> <span class="kt">HarptosTimeFormatter</span><span class="p">(</span><span class="nv">monthFormat</span><span class="p">:</span> <span class="s">"dd MMM', 'YYYY 'DR'"</span><span class="p">,</span> <span class="nv">festivalFormat</span><span class="p">:</span> <span class="s">"M', 'Y"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">date</span> <span class="o">=</span> <span class="kt">HarptosCalendar</span><span class="o">.</span><span class="nf">getTimeFor</span><span class="p">(</span><span class="nv">year</span><span class="p">:</span> <span class="mi">1200</span><span class="p">,</span> <span class="nv">month</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">day</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="nv">hour</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">minute</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="nv">second</span><span class="p">:</span> <span class="mi">2</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">dateString</span> <span class="o">=</span> <span class="n">formatter</span><span class="o">.</span><span class="nf">string</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="n">date</span><span class="p">)</span> <span class="c1">// 30 Hammer, 1200 DR</span>
+
+<span class="k">let</span> <span class="nv">festival</span> <span class="o">=</span> <span class="kt">HarptosCalendar</span><span class="o">.</span><span class="nf">getTimeFor</span><span class="p">(</span><span class="nv">year</span><span class="p">:</span> <span class="mi">1322</span><span class="p">,</span> <span class="nv">festival</span><span class="p">:</span> <span class="o">.</span><span class="n">moonfeast</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">festivalString</span> <span class="o">=</span> <span class="n">formatter</span><span class="o">.</span><span class="nf">string</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="n">festival</span><span class="p">)</span> <span class="c1">// Moonfeast, The Year of Lurking Death</span>
+</code></pre>
+
+<p>Format strings exist for hours, minutes, seconds, days, months and years. Festivals share format strings with months. Place text between single quotes to prevent formatting for some part of the format string.</p>
+<h2 id='api-documentation' class='heading'>API documentation</h2>
+
+<p>For the API docs, please <a href="https://wolf81.github.io/HarptosDocs/">check out the HarptosDocs website</a>.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-06-06)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

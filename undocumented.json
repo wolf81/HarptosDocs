@@ -1,0 +1,47 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/travis/build/wolf81/Harptos/Harptos/HarptosFestival.swift",
+      "line": 19,
+      "symbol": "HarptosFestival.midwinter",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/wolf81/Harptos/Harptos/HarptosFestival.swift",
+      "line": 20,
+      "symbol": "HarptosFestival.greengrass",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/wolf81/Harptos/Harptos/HarptosFestival.swift",
+      "line": 21,
+      "symbol": "HarptosFestival.midsummer",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/wolf81/Harptos/Harptos/HarptosFestival.swift",
+      "line": 22,
+      "symbol": "HarptosFestival.highharvestide",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/wolf81/Harptos/Harptos/HarptosFestival.swift",
+      "line": 23,
+      "symbol": "HarptosFestival.moonfeast",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/wolf81/Harptos/Harptos/HarptosFestival.swift",
+      "line": 24,
+      "symbol": "HarptosFestival.shieldmeet",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/travis/build/wolf81/Harptos"
+}
